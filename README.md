@@ -120,6 +120,9 @@ PORT=8000
   "token_type": "bearer"
 }
 ```
+<img width="1383" height="779" alt="Image" src="https://github.com/user-attachments/assets/ab2c2d5f-e618-4db4-80aa-b53e6eed3ebb" />
+<br>
+<br>
 
 **Error (401 Unauthorized):**
 ```json
@@ -127,6 +130,7 @@ PORT=8000
   "error": "Invalid credentials"
 }
 ```
+<img width="1377" height="530" alt="Image" src="https://github.com/user-attachments/assets/4ca85614-d9ae-49f8-9961-d48c88a1bbab" />
 
 ---
 
@@ -147,6 +151,7 @@ PORT=8000
   "token_type": "bearer"
 }
 ```
+<img width="1379" height="713" alt="Image" src="https://github.com/user-attachments/assets/7cf8fac7-45b1-4156-a180-63c69031af3a" />
 
 ---
 
@@ -161,6 +166,7 @@ PORT=8000
   ]
 }
 ```
+<img width="1378" height="788" alt="Image" src="https://github.com/user-attachments/assets/c250c1f7-16cd-4edd-9d5a-77d6fed4b5ea" />
 
 ---
 
@@ -192,6 +198,9 @@ Authorization: Bearer <JWT_ACCESS>
   "token_type": "bearer"
 }
 ```
+<img width="1367" height="760" alt="Image" src="https://github.com/user-attachments/assets/a69e03e6-4a82-499f-a571-1e24c9f97e55" />
+<br>
+<br>
 
 **Error (400 Bad Request):**
 ```json
@@ -199,6 +208,9 @@ Authorization: Bearer <JWT_ACCESS>
   "error": "Email already in use"
 }
 ```
+<img width="1373" height="512" alt="Image" src="https://github.com/user-attachments/assets/1cdcda28-2f38-4008-9c12-89ea01266927" />
+<br>
+<br>
 
 **Error (401 Unauthorized):**
 ```json
@@ -206,6 +218,7 @@ Authorization: Bearer <JWT_ACCESS>
   "error": "Missing or invalid Authorization header"
 }
 ```
+<img width="1382" height="509" alt="Image" src="https://github.com/user-attachments/assets/1074723f-49cb-4fdf-9be5-e84dc17a2288" />
 
 ---
 
@@ -221,6 +234,7 @@ curl -X POST ^
   -H "Content-Type: application/json" ^
   -d "{\"email\":\"user1@example.com\", \"password\":\"pass123\"}"
 ```
+<img width="1480" height="332" alt="Image" src="https://github.com/user-attachments/assets/ded0631a-5be4-4880-ae71-d07c8ebafc7c" />
 
 **Login Gagal (401):**
 ```bash
@@ -228,6 +242,7 @@ curl -Method POST "http://127.0.0.1:8000/auth/login" `
   -Headers @{ "accept" = "application/json"; "Content-Type" = "application/json" } `
   -Body '{"email": "user@example.com", "password": "salahpassword"}'
 ```
+<img width="1642" height="72" alt="Image" src="https://github.com/user-attachments/assets/5e48a804-eb8d-4e6a-9c48-b70e6214ef75" />
 
 ---
 
@@ -239,6 +254,7 @@ curl -Method POST "http://127.0.0.1:8000/auth/refresh?refresh_token=<JWT_REFRESH
   -Headers @{ "accept" = "application/json" } `
   -Body ''
 ```
+<img width="1633" height="341" alt="Image" src="https://github.com/user-attachments/assets/6ced6c4b-44c6-4b39-8816-e8b04e00d485" />
 
 **Refresh Gagal (token salah):**
 ```bash
@@ -246,6 +262,7 @@ curl -Method POST "http://127.0.0.1:8000/auth/refresh?refresh_token=<JWT_REFRESH
   -Headers @{ "accept" = "application/json" } `
   -Body ''
 ```
+<img width="1621" height="99" alt="Image" src="https://github.com/user-attachments/assets/aa820558-8ed7-4a71-be2a-50fac8c6eca3" />
 
 ---
 
@@ -254,6 +271,7 @@ curl -Method POST "http://127.0.0.1:8000/auth/refresh?refresh_token=<JWT_REFRESH
 ```bash
 curl.exe -X GET "http://127.0.0.1:8000/items" -H "accept: application/json"
 ```
+<img width="1633" height="153" alt="Image" src="https://github.com/user-attachments/assets/ffc30554-f1ff-47ff-9412-1c77638589ad" />
 
 ---
 
@@ -269,6 +287,7 @@ curl -Method PUT "http://127.0.0.1:8000/profile" `
   } `
   -Body '{"name": "Ferdayy", "email": "user1@example.com"}'
 ```
+<img width="1631" height="332" alt="Image" src="https://github.com/user-attachments/assets/956427e4-907f-4404-a5a3-4fba05d3bb9f" />
 
 **Gagal (tanpa token):**
 ```bash
@@ -279,6 +298,7 @@ curl -Method PUT "http://127.0.0.1:8000/profile" `
   } `
   -Body '{"name": "Ferdayy", "email": "user1@example.com"}'
 ```
+<img width="1627" height="74" alt="Image" src="https://github.com/user-attachments/assets/d44e3ec9-99bd-4e64-8474-4e9e883fb259" />
 
 **Gagal (token kadaluarsa):**
 ```bash
@@ -290,6 +310,7 @@ curl -Method PUT "http://127.0.0.1:8000/profile" `
   } `
   -Body '{"name": "Ferdayy", "email": "user1@example.com"}'
 ```
+<img width="1619" height="95" alt="Image" src="https://github.com/user-attachments/assets/89f4daa0-d1ff-48a5-895f-c72a461ede1a" />
 
 ---
 
