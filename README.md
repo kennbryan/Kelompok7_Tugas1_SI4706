@@ -306,6 +306,12 @@ curl -Method PUT "http://127.0.0.1:8000/profile" `
 ## 🧾 Lisensi
 
 Proyek ini dibuat untuk kebutuhan tugas mata kuliah Integrasi Aplikasi Enterprise SI-47-06 Kelompok 7.
+<br>
+**Link Google Drive:** https://drive.google.com/drive/folders/1DlmoI4b2otan3toS3GxawvVh9_3ZnxBh?usp=sharing
+<br>
+Struktur Proyek:
+<br>
+<img width="363" height="614" alt="Image" src="https://github.com/user-attachments/assets/a8e2f435-db5f-4ed2-b90c-155e09ecdee6" />
 
 📌 **Author:**
 1. Ferdiansyah Adi Saputra (102022330113)
