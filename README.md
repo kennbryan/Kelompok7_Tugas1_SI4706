@@ -5,9 +5,9 @@ Proyek ini menyediakan fitur login, refresh token, pengambilan data marketplace,
 
 ---
 
-## ⚙️ 1. Setup Environment & Menjalankan Server
+## 1. Setup Environment & Menjalankan Server
 
-### 🧩 Prasyarat
+### Prasyarat
 
 Pastikan kamu telah menginstal dan menyiapkan hal-hal berikut:
 
@@ -18,7 +18,7 @@ Pastikan kamu telah menginstal dan menyiapkan hal-hal berikut:
 
 ---
 
-### 🚀 Langkah Instalasi
+### Langkah Instalasi
 
 1. **Import folder project** ke komputer.
 2. Buka **PowerShell** dan izinkan script berjalan:
@@ -61,7 +61,7 @@ Pastikan kamu telah menginstal dan menyiapkan hal-hal berikut:
 
 ---
 
-## 🔑 2. Variabel `.env` yang Diperlukan
+## 2. Variabel `.env` yang Diperlukan
 
 Buat file **`.env`** di root project untuk menyimpan konfigurasi berikut:
 
@@ -89,7 +89,7 @@ PORT=8000
 
 ---
 
-## 🧭 3. Daftar Endpoint & Skema Ringkas
+## 3. Daftar Endpoint & Skema Ringkas
 
 | Method | Endpoint | Auth? | Deskripsi |
 |--------|-----------|--------|------------|
@@ -100,7 +100,7 @@ PORT=8000
 
 ---
 
-### 📤 Skema Request/Response
+### Skema Request/Response
 
 #### 🔹 `POST /auth/login`
 
@@ -222,9 +222,9 @@ Authorization: Bearer <JWT_ACCESS>
 
 ---
 
-## 💻 4. Contoh Penggunaan cURL
+## 4. Contoh Penggunaan cURL
 
-### 🧩 4.1 Login
+### 4.1 Login
 
 **Login Sukses:**
 ```bash
@@ -246,7 +246,7 @@ curl -Method POST "http://127.0.0.1:8000/auth/login" `
 
 ---
 
-### 🔄 4.2 Refresh Token
+### 4.2 Refresh Token
 
 **Refresh Sukses:**
 ```bash
@@ -266,7 +266,7 @@ curl -Method POST "http://127.0.0.1:8000/auth/refresh?refresh_token=<JWT_REFRESH
 
 ---
 
-### 📦 4.3 Ambil Items
+### 4.3 Ambil Items
 
 ```bash
 curl.exe -X GET "http://127.0.0.1:8000/items" -H "accept: application/json"
@@ -275,7 +275,7 @@ curl.exe -X GET "http://127.0.0.1:8000/items" -H "accept: application/json"
 
 ---
 
-### 👤 4.4 Update Profil
+### 4.4 Update Profil
 
 **Update Profil Sukses:**
 ```bash
@@ -314,7 +314,7 @@ curl -Method PUT "http://127.0.0.1:8000/profile" `
 
 ---
 
-## 🧠 5. Catatan & Asumsi
+## 5. Catatan & Asumsi
 
 - Database **harus dibuat terlebih dahulu** sebelum menjalankan server, atau script `seed.py` akan gagal.
 - `JWT_SECRET` **wajib diubah** menjadi string acak yang kuat sebelum digunakan di production.
